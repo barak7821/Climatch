@@ -31,9 +31,3 @@ export const fetchWeatherDataByCity = async (city: string, style: string) => {
     log("Fetched weather data by city from server API", { city, style })
     return res.json()
 }
-
-export const pingServerApi = async () => {
-    const res = await fetch(`/api/ping`, { method: "GET" })
-    log("Pinged server API")
-    return res.json()
-}

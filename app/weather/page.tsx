@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useWeather } from '../utils/WeatherContext'
 import type { WeatherData } from '../lib/types'
-import Loading from '../home/loading'
+import Loading from '../loading'
 import { getFallbackColor, getSkyPalette, getWeatherOverlay } from '../lib/skyPalettes'
 
 export default function Weather() {

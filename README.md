@@ -2,8 +2,7 @@
 
 AI‑enhanced, weather‑aware outfit suggestions based on live conditions.
 
-🚀 **Live Demo:** https://climatch-dusky.vercel.app  
-Note: The demo may take a few seconds to respond on first load.
+🚀 **Live Demo:** https://climatch-dusky.vercel.app
 
 ## ✨ Features
 
@@ -54,7 +53,6 @@ Note: The demo may take a few seconds to respond on first load.
 climatch/
 ├── app/
 │   ├── api/
-│   │   ├── ping/route.ts
 │   │   ├── weather/route.ts
 │   │   └── weatherManual/route.ts
 │   ├── lib/
@@ -66,12 +64,10 @@ climatch/
 │   │   └── types.ts
 │   ├── services/
 │   │   └── weatherApiClient.ts
-│   ├── home/
-│   │   ├── loading.tsx
-│   │   └── page.tsx
 │   ├── weather/
 │   │   └── page.tsx
 │   ├── layout.tsx
+│   ├── loading.tsx
 │   ├── page.tsx
 │   ├── globals.css
 │   └── utils/
@@ -112,3 +108,4 @@ npm run dev
 
 * The app uses server‑side API routes under `app/api`.
 * Geolocation requires browser permission.
+* The Home page is served at `/` via `app/page.tsx`.
